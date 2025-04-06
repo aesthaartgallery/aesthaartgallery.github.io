@@ -5,20 +5,14 @@
     <title>Aestha Art Gallery - Discover the Art of Bali</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta content="width=device-width, initial-scale=1" name="viewport" />
-
-    <!-- Meta Description for SEO -->
     <meta
       name="description"
       content="Aestha Art Gallery offers a curated collection of authentic Balinese paintings, custom artwork, and portraits, perfect for your home or office. Visit us in Kuta, Bali."
     />
-
-    <!-- Meta Keywords for SEO -->
     <meta
       name="keywords"
       content="art gallery, Balinese paintings, custom artwork, modern art, paintings for home, paintings for office, Bali art, portrait painting, art gallery Kuta"
     />
-
-    <!-- Meta for social media (Open Graph) -->
     <meta
       property="og:title"
       content="Aestha Art Gallery - Discover the Art of Bali"
@@ -34,13 +28,29 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:url" content="https://www.aesthaartgallery.com" />
-
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Aestha Art Gallery - Discover the Art of Bali"
+    />
+    <meta
+      name="twitter:description"
+      content="Explore original Balinese art and custom paintings at Aestha Art Gallery in Kuta, Bali."
+    />
+    <meta
+      name="twitter:image"
+      content="https://aesthaartgallery.com/img/1920x1080/01.jpeg"
+    />
+    <meta name="twitter:site" content="@aesthaartgallery" />
     <meta
       name="google-site-verification"
       content="IoYBsoyqLrEKqe7JAustZcL8VfpIiDwPNvTJ1KljNe8"
     />
-
     <meta name="author" content="Aestha Art Gallery" />
+    <link rel="canonical" href="https://www.aesthaartgallery.com/" />
+    <link rel="icon" type="image/x-icon" href="icon/favicon.ico" />
+    <link rel="manifest" href="site.webmanifest" />
     <link
       href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700"
       rel="stylesheet"
@@ -63,7 +73,29 @@
       type="text/css"
     />
     <link href="css/layout.min.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="favicon.png" />
+    <script>
+      document.documentElement.className =
+        document.documentElement.className.replace("no-js", "js");
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ArtGallery",
+        "name": "Aestha Art Gallery",
+        "image": "https://aesthaartgallery.com/img/logo.png",
+        "description": "A curated art gallery in Bali offering Balinese paintings and custom artwork.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Jl. Benesari No.2, Kuta",
+          "addressLocality": "Kuta",
+          "addressRegion": "Bali",
+          "postalCode": "80361",
+          "addressCountry": "ID"
+        },
+        "url": "https://www.aesthaartgallery.com",
+        "telephone": "+62 896 8560 2332"
+      }
+    </script>
   </head>
 
   <body>
@@ -85,29 +117,34 @@
                 <img
                   class="logo-img logo-img-main"
                   src="img/logo.png"
-                  alt="Asentus Logo"
+                  loading="lazy"
+                  alt="Aestha Art Gallery offers a curated collection of authentic Balinese paintings, custom artwork, and portraits, perfect for your home or office. Visit us in Kuta, Bali."
                 />
                 <img
                   class="logo-img logo-img-active"
                   src="img/logo-dark.png"
-                  alt="Asentus Logo"
+                  loading="lazy"
+                  alt="Aestha Art Gallery offers a curated collection of authentic Balinese paintings, custom artwork, and portraits, perfect for your home or office. Visit us in Kuta, Bali."
                 />
               </a>
             </div>
           </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse nav-collapse">
             <div class="menu-container">
               <ul class="navbar-nav navbar-nav-right">
                 <li class="nav-item">
-                  <a class="nav-item-child nav-item-hover" href="https://www.aesthaartgallery.com">Home</a>
+                  <a
+                    class="nav-item-child nav-item-hover"
+                    href="https://www.aesthaartgallery.com"
+                    >Home</a
+                  >
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-item-child nav-item-hover"
                     href="https://www.instagram.com/aesthaartgallery/"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Social Media</a
                   >
                 </li>
@@ -116,6 +153,7 @@
                     class="nav-item-child nav-item-hover"
                     href="https://wa.me/+6289685602332"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Contact Us</a
                   >
                 </li>
@@ -124,27 +162,22 @@
                     class="nav-item-child nav-item-hover"
                     href="https://wa.me/+6289685602332"
                     target="_blank"
+                    rel="noopener noreferrer"
                     >Order Now</a
                   >
                 </li>
               </ul>
             </div>
           </div>
-          <!-- End Navbar Collapse -->
         </div>
       </nav>
-      <!-- Navbar -->
     </header>
-    <!--========== END HEADER ==========-->
-
-    <!--========== SLIDER ==========-->
     <div
       id="carousel-example-generic"
       class="carousel slide"
       data-ride="carousel"
     >
       <div class="container">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
           <li
             data-target="#carousel-example-generic"
@@ -154,14 +187,13 @@
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
         </ol>
       </div>
-
-      <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
           <img
             class="img-responsive"
             src="img/1920x1080/01.jpeg"
-            alt="Slider Image"
+            loading="lazy"
+            alt="Discover Balinese art at Aestha Art Gallery – Located in Kuta, Bali"
           />
           <div class="container">
             <div class="carousel-centered">
@@ -178,6 +210,7 @@
               <a
                 href="https://wa.me/+6289685602332"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-theme btn-theme-sm btn-white-brd text-uppercase"
                 >Order Now</a
               >
@@ -188,7 +221,8 @@
           <img
             class="img-responsive"
             src="img/1920x1080/01.jpeg"
-            alt="Slider Image"
+            loading="lazy"
+            alt="Exclusive Balinese paintings and custom artwork display at Aestha Art Gallery"
           />
           <div class="container">
             <div class="carousel-centered">
@@ -205,6 +239,7 @@
               <a
                 href="https://wa.me/+6289685602332"
                 target="_blank"
+                rel="noopener noreferrer"
                 class="btn-theme btn-theme-sm btn-white-brd text-uppercase"
                 >Free Consult</a
               >
@@ -213,9 +248,6 @@
         </div>
       </div>
     </div>
-    <!--========== SLIDER ==========-->
-
-    <!--========== PAGE LAYOUT ==========-->
     <div class="content-lg container">
       <div class="row margin-b-40">
         <div class="col-sm-12">
@@ -230,17 +262,15 @@
           </p>
         </div>
       </div>
-      <!--// end row -->
-
       <div class="row">
-        <!-- Latest Products -->
         <div class="col-sm-4 sm-margin-b-50">
           <div class="margin-b-20">
             <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
               <img
                 class="img-responsive"
                 src="img/970x647/01.png"
-                alt="Latest Products Image"
+                loading="lazy"
+                alt="Various expressive and unique paintings including portraits, abstract, and nature-themed art from Aestha Art Gallery in Bali"
               />
             </div>
           </div>
@@ -253,16 +283,14 @@
             creativity and precision. Visit us in Kuta, Bali!
           </p>
         </div>
-        <!-- End Latest Products -->
-
-        <!-- Latest Products -->
         <div class="col-sm-4 sm-margin-b-50">
           <div class="margin-b-20">
             <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
               <img
                 class="img-responsive"
                 src="img/970x647/02.png"
-                alt="Latest Products Image"
+                loading="lazy"
+                alt="Elegant Japanese-inspired paintings featuring geishas and intricate cultural patterns in a modern artistic style"
               />
             </div>
           </div>
@@ -277,16 +305,14 @@
             sophistication to any space.
           </p>
         </div>
-        <!-- End Latest Products -->
-
-        <!-- Latest Products -->
         <div class="col-sm-4 sm-margin-b-50">
           <div class="margin-b-20">
             <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
               <img
                 class="img-responsive"
                 src="img/970x647/03.png"
-                alt="Latest Products Image"
+                loading="lazy"
+                alt="Colorful and whimsical paintings featuring botanical elements, dreamy abstracts, and playful illustrations"
               />
             </div>
           </div>
@@ -299,11 +325,8 @@
             Perfect for adding warmth, charm, and creativity to any space.
           </p>
         </div>
-        <!-- End Latest Products -->
       </div>
-      <!--// end row -->
     </div>
-    <!-- Service -->
     <div class="bg-color-sky-light" data-auto-height="true">
       <div class="content-lg container">
         <div class="row row-space-1 margin-b-2">
@@ -369,8 +392,6 @@
             </div>
           </div>
         </div>
-        <!--// end row -->
-
         <div class="row row-space-1">
           <div class="col-sm-4 sm-margin-b-2">
             <div
@@ -435,16 +456,8 @@
             </div>
           </div>
         </div>
-        <!--// end row -->
       </div>
     </div>
-    <!-- End Service -->
-
-    <!-- Latest Products -->
-
-    <!-- End Latest Products -->
-
-    <!-- Work -->
     <div class="bg-color-sky-light overflow-h">
       <div class="content-lg container">
         <div class="row margin-b-40">
@@ -458,13 +471,9 @@
             </p>
           </div>
         </div>
-        <!--// end row -->
-
-        <!-- Masonry Grid -->
         <div class="masonry-grid">
           <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
           <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-            <!-- Work -->
             <div
               class="work wow fadeInUp"
               data-wow-duration=".3"
@@ -474,19 +483,17 @@
                 <img
                   class="full-width img-responsive"
                   src="img/800x400/01.png"
-                  alt="Portfolio Image"
+                  loading="lazy"
+                  alt="Modern abstract painting from Aestha Art Gallery"
                 />
               </div>
               <div class="work-content">
                 <h3 class="color-white margin-b-5">Modern Art Painting</h3>
                 <p class="color-white margin-b-0">Aestha Art Gallery</p>
               </div>
-              <a class="content-wrapper-link"></a>
             </div>
-            <!-- End Work -->
           </div>
           <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-            <!-- Work -->
             <div
               class="work wow fadeInUp"
               data-wow-duration=".3"
@@ -496,19 +503,17 @@
                 <img
                   class="full-width img-responsive"
                   src="img/800x400/02.png"
-                  alt="Portfolio Image"
+                  loading="lazy"
+                  alt="Contemporary Balinese artwork in minimalist tones"
                 />
               </div>
               <div class="work-content">
                 <h3 class="color-white margin-b-5">Modern Art Painting</h3>
                 <p class="color-white margin-b-0">Aestha Art Gallery</p>
               </div>
-              <a class="content-wrapper-link"></a>
             </div>
-            <!-- End Work -->
           </div>
           <div class="masonry-grid-item col-xs-6 col-sm-6 col-md-4">
-            <!-- Work -->
             <div
               class="work wow fadeInUp"
               data-wow-duration=".3"
@@ -518,32 +523,24 @@
                 <img
                   class="full-width img-responsive"
                   src="img/800x400/03.png"
-                  alt="Portfolio Image"
+                  loading="lazy"
+                  alt="Unique modern art piece displayed at Aestha Art Gallery"
                 />
               </div>
               <div class="work-content">
                 <h3 class="color-white margin-b-5">Modern Art Painting</h3>
                 <p class="color-white margin-b-0">Aestha Art Gallery</p>
               </div>
-              <a class="content-wrapper-link"></a>
             </div>
-            <!-- End Work -->
           </div>
         </div>
-        <!-- End Masonry Grid -->
       </div>
     </div>
-    <!-- End Work -->
-
-    <!-- Testimonials -->
     <div class="content-lg container">
       <div class="row">
         <div class="col-sm-9">
           <h2>Customer Reviews</h2>
-
-          <!-- Swiper Testimonials -->
           <div class="swiper-slider swiper-testimonials">
-            <!-- Swiper Wrapper -->
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <blockquote class="blockquote">
@@ -586,17 +583,11 @@
                 </blockquote>
               </div>
             </div>
-            <!-- End Swiper Wrapper -->
-
-            <!-- Pagination -->
             <div class="swiper-testimonials-pagination"></div>
           </div>
-          <!-- End Swiper Testimonials -->
         </div>
       </div>
     </div>
-    <!-- End Testimonials -->
-
     <script src="vendor/jquery.min.js" type="text/javascript"></script>
     <script src="vendor/jquery-migrate.min.js" type="text/javascript"></script>
     <script

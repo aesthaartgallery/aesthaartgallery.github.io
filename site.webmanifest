@@ -1,0 +1,28 @@
+{
+    "name": "Aestha Art Gallery",
+    "short_name": "Aestha",
+    "description": "Aestha Art Gallery - Lukisan eksklusif & custom di Bali, Indonesia",
+    "lang": "id",
+    "start_url": "/",
+    "display": "standalone",
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/icon/favicon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icon/favicon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      },
+      {
+        "src": "/icon/favicon.ico",
+        "sizes": "48x48 32x32 16x16",
+        "type": "image/x-icon"
+      }
+    ]
+  }
+  
