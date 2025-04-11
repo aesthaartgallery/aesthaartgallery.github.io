@@ -1309,3 +1309,8 @@ fieldset[disabled] .btn-theme {
 .height-400 {
   height: 400px !important;
 }
+.img-responsive-custom {
+  width: 100% !important;
+  height: 300px !important;
+  object-fit: cover;
+}
