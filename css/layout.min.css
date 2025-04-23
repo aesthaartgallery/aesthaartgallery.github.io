@@ -1111,6 +1111,9 @@ fieldset[disabled] .btn-theme {
 .fweight-700 {
   font-weight: 700 !important;
 }
+.padding-t-150 {
+  padding-top: 150px !important;
+}
 .margin-l-0 {
   margin-left: 0 !important;
 }
