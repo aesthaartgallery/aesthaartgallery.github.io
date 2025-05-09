@@ -18,4 +18,16 @@
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://www.aesthaartgallery.com/contact-us/</loc>
+        <lastmod>2025-05-09</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.aesthaartgallery.com/social-media/</loc>
+        <lastmod>2025-05-209</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
 </urlset>
