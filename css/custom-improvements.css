@@ -1,0 +1,584 @@
+/* Custom CSS improvements for better readability and contrast */
+
+/* Improve paragraph text contrast */
+p {
+  color: #2c3e50 !important; /* Much darker for better readability */
+  font-weight: 500;
+}
+
+/* Improve general text color */
+span {
+  color: #34495e !important; /* Darker gray for better contrast */
+}
+
+/* Improve list text */
+li, li a {
+  color: #2c3e50 !important;
+}
+
+/* Improve link colors but exclude navigation and buttons */
+
+
+a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):hover, 
+a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):focus, 
+a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):active {
+  color: #2980b9 !important; /* Darker blue on hover */
+}
+
+/* Ensure headings are dark enough */
+h1, h2, h3, h4, h5, h6 {
+  color: #2c3e50 !important;
+  font-weight: 700;
+}
+
+/* Improve blockquote readability */
+.blockquote {
+  color: #34495e !important;
+  font-weight: 500;
+}
+
+/* Improve service section text */
+.service-info p {
+  color: #2c3e50 !important;
+}
+
+/* Improve carousel subtitle */
+.carousel-subtitle {
+  color: #ecf0f1 !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Improve carousel title */
+.carousel-title {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Improve form inputs if any */
+input, textarea, select {
+  color: #2c3e50 !important;
+}
+
+/* Navigation text - conditional colors */
+.header .nav-item-child {
+  color: #ffffff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.header .nav-item-child:hover,
+.header .nav-item-child:focus,
+.header .nav-item-child:active {
+  color: #f1d898 !important;
+  text-shadow: 0 0 5px rgba(241, 216, 152, 0.5);
+}
+
+/* Dark navbar for specific pages */
+.page-on-scroll .header {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+.page-on-scroll .header .nav-item-child {
+  color: #2c3e50 !important;
+}
+
+.page-on-scroll .header .nav-item-child:hover,
+.page-on-scroll .header .nav-item-child:focus,
+.page-on-scroll .header .nav-item-child:active {
+  color: #3498db !important;
+}
+
+/* Improve work content on portfolio */
+.work-content h3,
+.work-content p {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+}
+
+/* Improve general text in colored backgrounds */
+.bg-color-sky-light p,
+.bg-color-sky-light span,
+.bg-color-sky-light li {
+  color: #2c3e50 !important;
+}
+
+/* Improve lead paragraph */
+.lead {
+  color: #34495e !important;
+  font-weight: 600;
+}
+
+/* Keep original social media icon colors */
+.social-icons a {
+  font-size: 2em;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+/* Specific colors for each platform */
+.instagram {
+  color: #E4405F !important;
+}
+
+.facebook {
+  color: #1877F2 !important;
+}
+
+.twitter {
+  color: #1DA1F2 !important;
+}
+
+.whatsapp {
+  color: #25D366 !important;
+}
+
+.whatsapp:hover, .whatsapp:focus, .whatsapp:active {
+  color: #128C7E !important;
+}
+
+.email {
+  color: #EA4335 !important;
+}
+
+.email:hover, .email:focus, .email:active {
+  color: #d73925 !important;
+}
+
+/* Improve address and contact info */
+address, .contact-info {
+  color: #2c3e50 !important;
+}
+
+/* Make sure all text in service boxes is readable */
+.service h3,
+.service p {
+  color: #2c3e50 !important;
+}
+
+/* Keep original button styling for homepage carousel */
+.carousel .btn-theme,
+.btn-white-brd {
+  background-color: transparent !important;
+  border: 2px solid #fff !important;
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.carousel .btn-theme:hover,
+.btn-white-brd:hover {
+  background-color: #fff !important;
+  color: #2c3e50 !important;
+  border-color: #fff !important;
+}
+
+/* General button improvements */
+.btn {
+  font-weight: 600;
+}
+
+/* Keep WhatsApp green button color */
+.btn-success {
+  background-color: #25D366 !important;
+  border-color: #25D366 !important;
+  color: white !important;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active {
+  background-color: #128C7E !important;
+  border-color: #128C7E !important;
+  color: white !important;
+}
+
+/* Keep specific platform button colors in contact page */
+.contact-us .btn-primary {
+  background-color: #EA4335 !important;
+  border-color: #EA4335 !important;
+  color: white !important;
+}
+
+.contact-us .btn-primary:hover, .contact-us .btn-primary:focus, .contact-us .btn-primary:active {
+  background-color: #d73925 !important;
+  border-color: #d73925 !important;
+  color: white !important;
+}
+
+/* Social Media page button colors - ensure white text */
+.service-info .btn,
+.service-info .btn-primary,
+.service-info .btn:link,
+.service-info .btn:visited,
+.service-info .btn:hover,
+.service-info .btn:active,
+.service-info .btn-primary:link,
+.service-info .btn-primary:visited,
+.service-info .btn-primary:hover,
+.service-info .btn-primary:active {
+  color: white !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+/* Instagram button */
+.service-info a[href*="instagram"] {
+  background-color: #E4405F !important;
+  border-color: #E4405F !important;
+  color: white !important;
+}
+
+.service-info a[href*="instagram"]:hover,
+.service-info a[href*="instagram"]:focus,
+.service-info a[href*="instagram"]:active {
+  background-color: #C13584 !important;
+  border-color: #C13584 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Facebook button */
+.service-info a[href*="facebook"] {
+  background-color: #1877F2 !important;
+  border-color: #1877F2 !important;
+  color: white !important;
+}
+
+.service-info a[href*="facebook"]:hover,
+.service-info a[href*="facebook"]:focus,
+.service-info a[href*="facebook"]:active {
+  background-color: #166FE5 !important;
+  border-color: #166FE5 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Twitter button */
+.service-info a[href*="twitter"] {
+  background-color: #1DA1F2 !important;
+  border-color: #1DA1F2 !important;
+  color: white !important;
+}
+
+.service-info a[href*="twitter"]:hover,
+.service-info a[href*="twitter"]:focus,
+.service-info a[href*="twitter"]:active {
+  background-color: #0d8bd9 !important;
+  border-color: #0d8bd9 !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+/* Improve table text if any */
+table {
+  color: #2c3e50 !important;
+}
+
+/* Improve footer text if any */
+footer {
+  color: #2c3e50 !important;
+}
+
+/* Ensure all text elements have good contrast */
+.text-muted {
+  color: #7f8c8d !important;
+}
+
+/* Enhanced Portfolio Page Design */
+.portfolio-header {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 150px 0 80px;
+  margin-top: 0;
+}
+
+.portfolio-header h1 {
+  color: white !important;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.portfolio-header .lead {
+  color: rgba(255,255,255,0.9) !important;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.portfolio-header p {
+  color: rgba(255,255,255,0.8) !important;
+  font-size: 16px;
+}
+
+.category-tags {
+  background: rgba(255,255,255,0.1);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.category-tags h3 {
+  color: white !important;
+  margin-bottom: 15px;
+}
+
+.category-tags .list-inline li {
+  background: rgba(255,255,255,0.2);
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin: 5px;
+  color: white !important;
+  font-weight: 600;
+}
+
+/* Enhanced About Us Page Design */
+.about-header {
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  color: white;
+  padding: 150px 0 80px;
+  margin-top: 0;
+}
+
+.about-header h1 {
+  color: white !important;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.about-header .lead {
+  color: rgba(255,255,255,0.9) !important;
+  font-size: 20px;
+}
+
+.about-content {
+  background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 60px 0;
+  margin-top: -50px;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+.feature-box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.feature-box h3 {
+  color: #2c3e50 !important;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.feature-box p, .feature-box li {
+  color: #2c3e50 !important;
+  line-height: 1.6;
+}
+
+.feature-box ul {
+  padding-left: 20px;
+}
+
+.feature-box li {
+  margin-bottom: 10px;
+}
+
+.visit-studio {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.visit-studio h3 {
+  color: white !important;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.visit-studio h4 {
+  color: #f1d898 !important;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.visit-studio p, .visit-studio li {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+.visit-studio ul {
+  color: rgba(255,255,255,0.9) !important;
+}
+
+/* Enhanced Contact Us Page Design */
+.contact-header {
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  color: white;
+  padding: 150px 0 80px;
+  margin-top: 0;
+}
+
+.contact-header h1 {
+  color: white !important;
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.contact-header .lead {
+  color: rgba(255,255,255,0.9) !important;
+  font-size: 20px;
+}
+
+.contact-content {
+  background: linear-gradient(45deg, #f8f9fa 0%, #e9ecef 100%);
+  padding: 60px 0;
+  margin-top: -50px;
+  border-radius: 30px 30px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+/* Contact page specific icon styling */
+.contact-us .service-element a {
+  text-decoration: none !important;
+}
+
+.contact-us .service-element a:hover,
+.contact-us .service-element a:focus,
+.contact-us .service-element a:active {
+  text-decoration: none !important;
+}
+
+/* Utility margin classes */
+.margin-t-20 {
+  margin-top: 20px !important;
+}
+
+.margin-t-30 {
+  margin-top: 30px !important;
+}
+
+.margin-t-40 {
+  margin-top: 40px !important;
+}
+
+.margin-t-50 {
+  margin-top: 50px !important;
+}
+
+.margin-t-60 {
+  margin-top: 60px !important;
+}
+
+.margin-b-20 {
+  margin-bottom: 20px !important;
+}
+
+.margin-b-30 {
+  margin-bottom: 30px !important;
+}
+
+.margin-b-40 {
+  margin-bottom: 40px !important;
+}
+
+.margin-b-50 {
+  margin-bottom: 50px !important;
+}
+
+.margin-b-60 {
+  margin-bottom: 60px !important;
+}
+
+/* Contact page section spacing */
+.contact-content .row + .row {
+  margin-top: 50px;
+}
+
+.contact-content .service {
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+/* Contact page specific styling */
+.contact-us .service-element a {
+  font-size: 4em;
+  text-decoration: none;
+}
+
+.contact-us .whatsapp {
+  color: #25D366 !important;
+}
+
+.contact-us .email {
+  color: #EA4335 !important;
+}
+
+
+/* Utility classes */
+.margin-r-20 {
+  margin-right: 20px !important;
+}
+
+/* Enhanced masonry grid */
+.masonry-grid-item {
+  transition: transform 0.3s ease;
+}
+
+.masonry-grid-item:hover {
+  transform: scale(1.02);
+}
+
+.work {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Responsive font sizes for better mobile readability */
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  h2 {
+    font-size: 26px;
+  }
+  
+  h3, h4 {
+    font-size: 20px;
+  }
+  
+  .portfolio-header h1,
+  .about-header h1 {
+    font-size: 36px !important;
+  }
+  
+  .portfolio-header,
+  .about-header,
+  .contact-header {
+    padding: 100px 0 60px;
+  }
+  
+  .contact-header h1 {
+    font-size: 36px !important;
+  }
+}
