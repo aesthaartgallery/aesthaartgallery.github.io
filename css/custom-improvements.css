@@ -12,21 +12,26 @@ span {
 }
 
 /* Improve list text */
-li, li a {
+li,
+li a {
   color: #2c3e50 !important;
 }
 
 /* Improve link colors but exclude navigation and buttons */
 
-
-a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):hover, 
-a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):focus, 
+a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):hover,
+a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):focus,
 a:not(.nav-item-child):not(.logo-wrap):not(.btn):not(.btn-theme):active {
   color: #2980b9 !important; /* Darker blue on hover */
 }
 
 /* Ensure headings are dark enough */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #2c3e50 !important;
   font-weight: 700;
 }
@@ -45,23 +50,34 @@ h1, h2, h3, h4, h5, h6 {
 /* Improve carousel subtitle */
 .carousel-subtitle {
   color: #ecf0f1 !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Improve carousel title */
 .carousel-title {
   color: #ffffff !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 /* Improve form inputs if any */
-input, textarea, select {
+input,
+textarea,
+select {
   color: #2c3e50 !important;
 }
 
 /* Navigation text - conditional colors */
+@media (max-width: 767px) {
+  .header .nav-item-child {
+    color: #2c3e50 !important; /* Dark text for mobile */
+  }
+}
+@media (min-width: 767px) {
+  .header .nav-item-child {
+    color: #ffffff !important;
+  }
+}
 .header .nav-item-child {
-  color: #ffffff !important;
   font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s ease;
@@ -78,7 +94,7 @@ input, textarea, select {
 .page-on-scroll .header {
   background-color: rgba(255, 255, 255, 0.95) !important;
   backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .page-on-scroll .header .nav-item-child {
@@ -95,7 +111,7 @@ input, textarea, select {
 .work-content h3,
 .work-content p {
   color: #ffffff !important;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.8);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
 }
 
 /* Improve general text in colored backgrounds */
@@ -120,35 +136,40 @@ input, textarea, select {
 
 /* Specific colors for each platform */
 .instagram {
-  color: #E4405F !important;
+  color: #e4405f !important;
 }
 
 .facebook {
-  color: #1877F2 !important;
+  color: #1877f2 !important;
 }
 
 .twitter {
-  color: #1DA1F2 !important;
+  color: #1da1f2 !important;
 }
 
 .whatsapp {
-  color: #25D366 !important;
+  color: #25d366 !important;
 }
 
-.whatsapp:hover, .whatsapp:focus, .whatsapp:active {
-  color: #128C7E !important;
+.whatsapp:hover,
+.whatsapp:focus,
+.whatsapp:active {
+  color: #128c7e !important;
 }
 
 .email {
-  color: #EA4335 !important;
+  color: #ea4335 !important;
 }
 
-.email:hover, .email:focus, .email:active {
+.email:hover,
+.email:focus,
+.email:active {
   color: #d73925 !important;
 }
 
 /* Improve address and contact info */
-address, .contact-info {
+address,
+.contact-info {
   color: #2c3e50 !important;
 }
 
@@ -182,25 +203,29 @@ address, .contact-info {
 
 /* Keep WhatsApp green button color */
 .btn-success {
-  background-color: #25D366 !important;
-  border-color: #25D366 !important;
+  background-color: #25d366 !important;
+  border-color: #25d366 !important;
   color: white !important;
 }
 
-.btn-success:hover, .btn-success:focus, .btn-success:active {
-  background-color: #128C7E !important;
-  border-color: #128C7E !important;
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active {
+  background-color: #128c7e !important;
+  border-color: #128c7e !important;
   color: white !important;
 }
 
 /* Keep specific platform button colors in contact page */
 .contact-us .btn-primary {
-  background-color: #EA4335 !important;
-  border-color: #EA4335 !important;
+  background-color: #ea4335 !important;
+  border-color: #ea4335 !important;
   color: white !important;
 }
 
-.contact-us .btn-primary:hover, .contact-us .btn-primary:focus, .contact-us .btn-primary:active {
+.contact-us .btn-primary:hover,
+.contact-us .btn-primary:focus,
+.contact-us .btn-primary:active {
   background-color: #d73925 !important;
   border-color: #d73925 !important;
   color: white !important;
@@ -224,40 +249,40 @@ address, .contact-info {
 
 /* Instagram button */
 .service-info a[href*="instagram"] {
-  background-color: #E4405F !important;
-  border-color: #E4405F !important;
+  background-color: #e4405f !important;
+  border-color: #e4405f !important;
   color: white !important;
 }
 
 .service-info a[href*="instagram"]:hover,
 .service-info a[href*="instagram"]:focus,
 .service-info a[href*="instagram"]:active {
-  background-color: #C13584 !important;
-  border-color: #C13584 !important;
+  background-color: #c13584 !important;
+  border-color: #c13584 !important;
   color: white !important;
   text-decoration: none !important;
 }
 
 /* Facebook button */
 .service-info a[href*="facebook"] {
-  background-color: #1877F2 !important;
-  border-color: #1877F2 !important;
+  background-color: #1877f2 !important;
+  border-color: #1877f2 !important;
   color: white !important;
 }
 
 .service-info a[href*="facebook"]:hover,
 .service-info a[href*="facebook"]:focus,
 .service-info a[href*="facebook"]:active {
-  background-color: #166FE5 !important;
-  border-color: #166FE5 !important;
+  background-color: #166fe5 !important;
+  border-color: #166fe5 !important;
   color: white !important;
   text-decoration: none !important;
 }
 
 /* Twitter button */
 .service-info a[href*="twitter"] {
-  background-color: #1DA1F2 !important;
-  border-color: #1DA1F2 !important;
+  background-color: #1da1f2 !important;
+  border-color: #1da1f2 !important;
   color: white !important;
 }
 
@@ -297,22 +322,22 @@ footer {
   color: white !important;
   font-size: 48px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .portfolio-header .lead {
-  color: rgba(255,255,255,0.9) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   font-size: 20px;
   margin-bottom: 30px;
 }
 
 .portfolio-header p {
-  color: rgba(255,255,255,0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
   font-size: 16px;
 }
 
 .category-tags {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   padding: 20px;
   border-radius: 10px;
   backdrop-filter: blur(10px);
@@ -324,7 +349,7 @@ footer {
 }
 
 .category-tags .list-inline li {
-  background: rgba(255,255,255,0.2);
+  background: rgba(255, 255, 255, 0.2);
   padding: 8px 15px;
   border-radius: 20px;
   margin: 5px;
@@ -344,11 +369,11 @@ footer {
   color: white !important;
   font-size: 48px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .about-header .lead {
-  color: rgba(255,255,255,0.9) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   font-size: 20px;
 }
 
@@ -365,14 +390,14 @@ footer {
   background: white;
   padding: 30px;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-box:hover {
   transform: translateY(-5px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .feature-box h3 {
@@ -381,7 +406,8 @@ footer {
   font-size: 24px;
 }
 
-.feature-box p, .feature-box li {
+.feature-box p,
+.feature-box li {
   color: #2c3e50 !important;
   line-height: 1.6;
 }
@@ -415,12 +441,13 @@ footer {
   font-size: 18px;
 }
 
-.visit-studio p, .visit-studio li {
-  color: rgba(255,255,255,0.9) !important;
+.visit-studio p,
+.visit-studio li {
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 .visit-studio ul {
-  color: rgba(255,255,255,0.9) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 
 /* Enhanced Contact Us Page Design */
@@ -435,11 +462,11 @@ footer {
   color: white !important;
   font-size: 48px;
   margin-bottom: 20px;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .contact-header .lead {
-  color: rgba(255,255,255,0.9) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
   font-size: 20px;
 }
 
@@ -521,13 +548,12 @@ footer {
 }
 
 .contact-us .whatsapp {
-  color: #25D366 !important;
+  color: #25d366 !important;
 }
 
 .contact-us .email {
-  color: #EA4335 !important;
+  color: #ea4335 !important;
 }
-
 
 /* Utility classes */
 .margin-r-20 {
@@ -546,7 +572,7 @@ footer {
 .work {
   border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 /* Responsive font sizes for better mobile readability */
@@ -554,30 +580,31 @@ footer {
   p {
     font-size: 16px;
   }
-  
+
   h1 {
     font-size: 32px;
   }
-  
+
   h2 {
     font-size: 26px;
   }
-  
-  h3, h4 {
+
+  h3,
+  h4 {
     font-size: 20px;
   }
-  
+
   .portfolio-header h1,
   .about-header h1 {
     font-size: 36px !important;
   }
-  
+
   .portfolio-header,
   .about-header,
   .contact-header {
     padding: 140px 0 60px;
   }
-  
+
   .contact-header h1 {
     font-size: 36px !important;
   }
