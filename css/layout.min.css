@@ -23,9 +23,9 @@ a:hover {
 .service .service-info,
 .service:hover .service-element,
 .service:hover .service-info {
-  transition-duration: 0.3s;
+  /* transition-duration: 0.3s;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
+  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1); */
 }
 .blockquote,
 .header .nav-item-child,
@@ -377,15 +377,15 @@ fieldset[disabled] .btn-theme {
   display: inline-block;
 }
 .service:hover .service-element {
-  opacity: 0;
+  /* opacity: 0;
   -webkit-transform: translate3d(0, -100%, 0);
   -moz-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0); */
 }
 .service:hover .service-info {
-  -webkit-transform: translate3d(0, -30%, 0);
+  /* -webkit-transform: translate3d(0, -30%, 0);
   -moz-transform: translate3d(0, -30%, 0);
-  transform: translate3d(0, -30%, 0);
+  transform: translate3d(0, -30%, 0); */
 }
 .work,
 .work .work-overlay {
