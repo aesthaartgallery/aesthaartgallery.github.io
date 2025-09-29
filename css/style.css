@@ -162,12 +162,11 @@ body {
 /* Home Section with Coverflow */
 .coverflow-wrapper {
     width: 100%;
-
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 40px;
 }
 
 .coverflow-container {
@@ -995,6 +994,10 @@ body {
         padding: 50px 30px;
     }
 
+    .coverflow-wrapper {
+        padding-top: 0px;
+    }
+
     .main-menu {
         display: none;
         position: absolute;
@@ -1125,11 +1128,14 @@ body {
     .header {
         height: 70px;
         padding: 50px 30px;
-        max-width: 100vw;
     }
 
     .header.scrolled {
         height: 60px;
+    }
+
+    .coverflow-wrapper {
+        padding-top: 0px;
     }
 
     .logo {
